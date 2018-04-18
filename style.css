@@ -1,0 +1,361 @@
+:root {
+   /* box-sizing: border-box;*/
+}
+
+*,*::before,::after {
+   /*box-sizing: inherit;*/
+   padding: 0;
+   margin:0;
+}
+
+body {
+    background-color:violet;
+}
+
+.abuelo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    animation: fondo_mov 1s linear infinite;
+}
+
+.pelota {
+    box-sizing: border-box;
+    position: absolute;
+    top:52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background-color:  gainsboro;
+    border: 10px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    animation: spin 1s linear infinite;
+
+
+}
+
+
+.pelota .circulo1 {
+    box-sizing: border-box;
+    position: absolute;
+    top:10%;
+    left: -8%;
+    width: 50%;
+    height: 50%;
+    background-color:  goldenrod;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.circulo1 .child {
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background-color:  gainsboro;
+    border: 5px solid  black;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+
+
+
+.pelota .circulo2 {
+    box-sizing: border-box;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background-color:  goldenrod;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.circulo2 .child {
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background-color:   gainsboro;
+    border: 5px solid black;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+
+.pelota .circulo {
+    box-sizing: border-box;
+    position: absolute;
+    top:-45%;
+    left: 70%;
+    width: 140%;
+    height: 140%;
+    background-color:goldenrod;
+    transform: rotate(-45deg);
+    transform-origin: 0 50%;
+    border: 5px solid black;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.pelota .linea1 {
+ position: absolute;
+ top: 25%;
+ left: 85%;
+ width:5px;
+ height: 150px;
+ background-color: black;
+ transform: rotate(15deg);
+ transform-origin: 50% 50%;
+  z-index: 0;
+}
+
+.pelota .linea2 {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    width:5px;
+    height: 160px;
+    background-color: black;
+    transform: rotate(65deg);
+    transform-origin: 50% 50%;
+    z-index: 0;
+   }
+
+   .pelota .linea3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width:5px;
+    height: 160px;
+    background-color: black;
+    transform: rotate(130deg);
+    transform-origin: 50% 50%;
+    z-index: 0;
+   }
+
+   .pelota .punto1 {
+        position: absolute;
+        width: 6%;
+        height: 6%;
+        background-color: black;
+        top:40%;
+        left: 55%;
+        border-radius: 50%;
+
+
+   }
+
+   .pelota .punto2 {
+
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    background-color: black;
+    top:60%;
+    left: 38%;
+    border-radius: 50%;   
+}
+
+
+
+.abuelo  .base{
+    box-sizing: border-box;
+    position: absolute;
+    top:38%;
+    left: 45%;
+    width: 250px;
+    height: 250px;
+
+    border: 20px solid  transparent;
+    border-top:  20px solid  black;
+    transform: translate(-65%,-55%)  rotate(-25deg);
+    transform-origin: 100% 0;
+    z-index: 1
+}
+.base .copa {
+     box-sizing: border-box;
+     position: absolute;
+     top:50%;
+     left: 50%;
+     width: 249px;
+     height: 120px;
+     transform: translate(-50%,-203.5%);
+     border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+   
+     background-color:gainsboro;
+     border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0;
+     border: 10px solid black;
+     border-bottom: transparent;
+
+}
+
+.copa .child {
+    box-sizing: border-box;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-30%);
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+.copa .smallchild{
+    box-sizing: border-box;
+    position: absolute;
+    top:80%;
+    left:80%;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;  
+}
+.copa .big-line1, .copa .small-line1 {
+    position: absolute;
+    top: 4.5%;
+    left: 85%;
+    width: 120px;
+    height: 10px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(25deg);
+    transform-origin: 0 100%;
+ 
+ }
+
+ .copa .small-line1 {
+    width: 60px; 
+    top: 58%;
+    left: 140%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+ }
+
+
+ .copa .big-line2,.copa .small-line2,.small-line3 {
+    position: absolute;
+    top: 95%;
+    left: 100%;
+    width: 120px;
+    height: 10px;
+    background-color: black;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(25deg);
+    transform-origin: 0 100%;
+    z-index: 10;
+ 
+ }
+
+.copa .small-line2, .small-line3 {
+   width: 60px;
+   top :52%;
+   left: 88%; 
+   border-top-left-radius: 50%;
+   border-bottom-left-radius: 50%;
+}
+
+.copa .posicionar {
+    top: 350%;
+    left: 100%; 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.terreno {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom right,black,white);
+    top:78.6%;
+    z-index: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100% {
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+}
+
+
+@keyframes fondo_mov {
+    0%{
+        background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+    }
+    16%{
+        background: linear-gradient(to right, violet,red,orange,yellow,green,blue,indigo); 
+    }
+    32%{
+        background: linear-gradient(to right, indigo,violet,red,orange,yellow,green,blue); 
+    }
+    48%{
+         background: linear-gradient(to right, blue,indigo,violet,red,orange,yellow,green); }
+    66%{
+        background: linear-gradient(to right, green,blue,indigo,violet,red,orange,yellow); 
+    }
+
+    82%{
+        background: linear-gradient(to right, yellow,green,blue,indigo,violet,red,orange); 
+
+    }
+    100%{
+        background: linear-gradient(to right, orange,yellow,green,blue,indigo,violet,red); 
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
